@@ -1,0 +1,63 @@
+.container-small{
+  max-width: 667px;
+  margin: 0 auto;
+}
+.bottom-page{
+  text-align: center;
+  padding: 70px 0;
+  background: #000000;
+
+  &__title{
+    font-size: 16px;
+line-height: 22px;
+text-transform: uppercase;
+color: #FEFEFE;
+  }
+  &__describe{
+    margin-top: 22px;
+    margin-bottom: 37px;
+    font-size: 16px;
+line-height: 28px;
+color: #B9B9B9;
+@media screen and (max-width:400px){
+  &{
+    font-size: 11px;
+  }
+}
+
+  }
+  &__img-wrapp{
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+  &__address,
+  &__tel,
+  &__email{
+    font-size: 16px;
+line-height: 26px;
+color: #B9B9B9;
+margin-top: 34px;
+letter-spacing: 1px;
+
+
+@media screen and (max-width:400px){
+  font-size: 14px;
+}
+
+  }
+  @media screen and (max-width:600px){
+    &{
+      padding: 38px 35px 47px 35px;
+      
+    }
+  }
+}
+@media screen and (max-width:600px){
+  .execute-text{
+    display: none;
+  }
+}
+.slash{
+  padding: 0 10px;
+}

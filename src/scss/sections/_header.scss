@@ -1,0 +1,154 @@
+
+
+  .img-wrapp{
+    width: 100%;
+    text-align: center;
+  }
+.header{
+padding-bottom: 66px;
+@media screen and (max-width:768px){
+  &{
+    padding-top: 83px;
+  }
+}
+}
+.header-img{
+  width: 100%;
+}
+@media screen and (max-width:940px){
+  .header-img{
+    max-width: 768px;
+  }
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    &{  display: none;
+      width: 200px;
+      top: 58px;
+      right: 28px;
+      position: absolute;
+      background-color:#F5F5F5;}
+  
+  }
+    &__items{
+      list-style: none;
+      text-transform: uppercase;
+    padding-top: 45px;
+    padding-bottom: 51px;
+    @media screen and (max-width:940px){
+      &{
+        padding: 40px 0;
+      }
+    }
+    @media screen and (max-width:768px){
+      &{
+        padding: 8px;
+      }
+       &:hover{
+        background-color: #e5e5e5;
+       } 
+        }
+    
+    }
+    &__items:not(:last-child){
+      margin-right: 68px;
+      @media screen and (max-width:940px){
+        
+  &{
+    margin-right: 34px;
+    
+  }
+  
+      }
+    
+    }
+    
+    &__links{
+     text-decoration: none;
+     font-size: 11px;
+     line-height: 22px;
+     color: #4E4E4E;
+     letter-spacing: 1.1px;
+    }
+  }
+
+  .header-menu{
+    &.active{
+      .navbar{
+        display: block;
+      }
+       
+    }
+  }
+
+  .active{
+    color: #57A4A4;
+  }
+.burger-menu{
+  display: none;
+
+  @media (max-width: 768px) {
+    &{
+      display: block;
+      position: absolute;
+      width: 44px;
+    height: 37px;
+    background-color: black;
+    top: 23px;
+    right: 28px;
+    }
+    &::before,
+    &::after{
+      content: '';
+      position: absolute;
+      width: 17px;
+      height: 2px;
+      background-color: beige;
+      left: 14px;
+    }
+    &::before{
+      top: 12px;
+    }
+    &::after{
+      top: 20px;
+    };
+span{
+  position: absolute;
+  width: 17px;
+  height: 2px;
+  background-color: beige;
+left: 14px;
+top: 16px;
+transition: all 0.3s ease 0s;
+
+  }
+
+  &.active{
+    &::before{
+      transform: rotate(45deg);
+      top: 16px;
+    }
+    &::after {
+      transform: rotate(-45deg);
+      top: 16px;
+    }
+    span {
+      transform: scale(0);
+    }
+  }
+
+}
+}
+
+
+
+ 
+
+
+
+
