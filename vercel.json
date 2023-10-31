@@ -1,6 +1,7 @@
 {
   "routes": [
+    { "src": "/dist/(.*)", "dest": "/dist/$1" },
     { "src": "/static/(.*)", "dest": "/dist/$1" },
-    { "src": "/(.*)", "dest": "/src/$1" }
+    { "src": "/(.*)", "dest": "/dist/$1" }
   ]
 }
