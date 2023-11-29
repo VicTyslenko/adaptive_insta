@@ -1,5 +1,6 @@
 {
-  "name": "advanced_hw_2",
+  "homepage": "https://VicTyslenko.github.io/adaptive_insta",
+  "name": "instagram",
   "version": "1.0.0",
   "description": "second_project_forkio",
   "main": "index.js",
